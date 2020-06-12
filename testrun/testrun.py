@@ -8,16 +8,27 @@ E:\Desktop\neccessy books for coding\python books\automate python\testrun
 # chapter: 3
 # This program says hello and asks for my name.
 
-# zeroDivide.py
-# 73
+# guessTheNumber.py
+# 74
 
-def spam(divideBy):
-    try:        
-        return 42 / divideBy
-    except ZeroDivisionError:
-        print('Error: Invalid argument.')
+# This is a guess the number game.
+import random
+secretNumber = random.randint(1, 20)
+print('I am thinking of a number between 1 and 20.')
 
-print(spam(2))
-print(spam(12))
-print(spam(0))
-print(spam(1))
+#Ask the player to guess 6 times.
+for guessesTaken in range(1, 7):
+    print('Take a guess.')
+    guess = int(input())
+
+    if guess < secretNumber:
+        print('Your guess is too low.')
+    elif guess > secretNumber:
+        print('Your guess is too high.')
+    else:
+        break  # this condition is the correct guess!
+    
+if guess == secretNumber:
+    print('Good job! You guessed my number in ' + str(guessesTaken) + ' guesses!')
+else:
+    print('Nope.The number I was thinking of was ' + str(secretNumber))
