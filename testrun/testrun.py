@@ -9,15 +9,11 @@ E:\Desktop\neccessy books for coding\python books\automate python\testrun
 # This program says hello and asks for my name.
 
 # magic8Ball.py
-# 68
+# 70
 
 def spam():
-    eggs = 99
-    bacon()
-    print(eggs)
-
-def bacon():
-    ham = 101
-    eggs = 0
-
+    global eggs
+eggs = 'spam'
+eggs = 'global'
 spam()
+print(eggs)
