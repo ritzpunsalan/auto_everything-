@@ -1,0 +1,206 @@
+this will be link sources from this book. apparently, the tutorials from this does not work.
+source link:
+    chapter 
+    title & page
+    sources
+
+chapter 1
+    pg 4
+    python
+    http://python.org/
+    pg 9
+    Stack Overlow 
+    http://stackoverflow.com/ 
+    “learn programming” subreddit 
+    http://reddit.com/r/learnprogramming/
+    pg 10
+    pastebin
+    http://pastebin.com/
+        http://pastebin.com/SzP2DbFx/
+    github
+    http://gist.github.com/
+        https://gist.github.com/asweigart/6912168/
+    blog
+    http://inventwithpython.com/blog/
+    pg 14
+    common python error messages
+    http://nostarch.com/automatestuff/
+
+chapter 2
+chapter 3
+chapter 4
+chapter 5
+chapter 6
+chapter 7
+    pg 148
+    regular expressions
+    http://www.theguardian.com/technology/2012/dec/04/ict-teach-kids-regular-expressions/
+    pg 152
+    tester
+    http://regexpal.com/
+    pg 165
+    resources 
+    http://nostarch.com/automatestuff/
+    pg 169
+    No Starch Press contact page
+    http://www.nostarch.com/contactus.htm
+    Python documentation
+    http://docs.python.org/3/library/re.html
+    The tutorial website 
+    http://www.regular-expressions.info/
+
+chapter 8
+    pg 177
+    Python website
+    http://docs.python.org/3/library/os.path.html
+     pg 183
+     none
+     
+
+chapter 9
+    pg 204
+    ZIP file 
+    http://nostarch.com/automatestuff/
+
+chapter 10
+
+chapter 11
+    pg 234
+    url
+    http://inventwithpython.com/
+        pg 345
+    http://www.google.com/
+    https://www.google.com/maps/place/870+Valencia+St/@37.7590311,-122.4215096,17z/data=!3m1!4b1!4m2!3m1!1s0x808f7e3dadc07a37:0xc86b0b2bb93b73d8
+    https://www.google.com/maps/place/870+Valencia+St+San+Francisco+CA/
+    'https://www.google.com/maps/place/your_address_string'
+    pg 239
+    Joel on Software: The Absolute Minimum Every Software Developer Absolutely, Positively Must Know About Unicode and Character Sets (No Excuses!): 
+    http://www.joelonsoftware.com/articles/Unicode.html
+    Pragmatic Unicode: 
+    http://nedbatchelder.com/text/unipain.html
+    pg 240
+    learning html
+    http://htmldog.com/guides/html/beginner/
+    http://www.codecademy.com/tracks/web/
+    https://developer.mozilla.org/en-US/learn/html/
+    pg 243
+    parse HTML with regular expressions 
+    http://stackoverflow.com/a/1732454/1893164/
+    pg 244
+    weather forecast data
+    http://weather.gov/
+    pg 245 & 246
+    alternatives
+    http://nostarch.com/automatestuff/
+    pg 251
+    geek webcomics
+    http://xkcd.com/
+    pg 256
+    beautiful soup's
+    http://www.crummy.com/software/BeautifulSoup/bs4/doc/
+    firefox
+    http://getfirefox.com/
+    pg 257
+    website
+    http://inventwithpython.com/
+    pg 261
+    Selenium documentation
+    http://selenium-python.readthedocs.org/
+    pg 263
+    2048 simple game
+    https://gabrielecirulli.github.io/2048/
+
+
+
+chapter 12
+    pg 265
+    spreadsheets
+    https://www.libreoffice.org/ 
+    http://www.openoffice.org/
+    pg 266
+    OpenPyXL
+    http://openpyxl.readthedocs.org/
+    spreadsheets
+    http://nostarch.com/automatestuff/
+        pg 276, 279, 281, 288
+
+chapter 13
+    pg 297
+    pdf
+    http://nostarch.com/automatestuff/
+        pg 299, 301
+    pg 306
+    pdf
+    https://www.libreoffice.org 
+    http://openoffice.org 
+    The full documentation for Python-Docx 
+    https://python-docx.readthedocs.org/
+    pg 312
+    Python-Docx’s use of styles 
+    https://python-docx.readthedocs.org/en/latest/user/styles.html
+    pg 318
+    brute-force pdf pw breaker
+    http://nostarch.com/automatestuff/
+
+chapter 14
+    pg 320
+    csv
+    http://nostarch.com/automatestuff/
+        pg 328, 334
+    pg 330
+    json data
+    http://api.openweathermap.org/data/2.5/forecast/daily?q=<Location>&cnt=3
+    pg 331
+    weather data
+    http://openweathermap.org/
+
+chapter 15
+    pg 337
+    function is explained
+    https://docs.python.org/3/library/profile.html
+    pg 349
+    beginner tutorials
+    http://nostarch.com/automatestuff/
+        pg 350, 355, 358, 359, 360
+    pg 350
+    webcomics
+    http://xkcd.com/140
+    http://xkcd.com/141
+    http://xkcd.com/142
+    http://xkcd.com/279
+    pg 356
+    Unix philosophy
+    https://en.wikipedia.org/wiki/Unix_philosophy/
+
+chapter 16
+    pg 365
+    pw
+    http://nostarch.com/automatestuff/
+        pg 376, 382, 386, 
+    pg 366
+    IMAPClient: the full documentation 
+    http://imapclient.readthedocs.org/
+    PyzMail
+    http://www.magiksys.net/pyzmail/
+    pg 385
+    scrape data
+    http://weather.gov/
+
+chapter 17
+    pg 389
+    coloring
+    http://nostarch.com/automatestuff/
+        pg 390, 412
+    pg 408
+    ImageDraw
+    http://pillow.readthedocs.org/en/latest/reference/ImageDraw.html
+
+chapter 18
+    pg 414
+    pyautogui
+    http://pyautogui.readthedocs.org/
+    pg 420
+    gui paint
+    http://sumopaint.com/
+    pg 439
+    http://nostarch.com/automatestuff/
