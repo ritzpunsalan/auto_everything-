@@ -184,3 +184,98 @@ print(eggs) # prints 'global'
 works!!
 
 """
+
+# sameName2.py
+# 70
+
+"""
+
+def spam():
+    global eggs
+    eggs = 'spam'
+
+eggs = 'global'
+spam()
+print(eggs)
+
+works!!
+
+"""
+
+# sameName3.py
+# 71
+
+"""
+
+def spam():
+    global eggs
+    eggs = 'spam'  # this is the global
+
+
+def bacon():
+    eggs = 'bacon'  # this is a local
+
+
+def ham():
+    print(eggs)  # this is the global
+
+
+eggs = 42  # this is the global
+spam()
+print(eggs)
+
+works!!
+
+"""
+
+# sameName4.py
+
+"""
+
+def spam():
+    print(eggs)  # ERROR!
+    eggs = 'spam local'
+
+
+eggs = 'global'
+spam()
+
+error works!!
+
+"""
+
+# zeroDivide.py
+# 72
+
+"""
+
+def spam(divideBy):
+    return 42 / divideBy
+
+print(spam(2))
+print(spam(12))
+print(spam(0))
+print(spam(1))
+
+error works!!
+
+"""
+
+# 73
+
+"""
+
+def spam(divideBy):
+    try:
+        return 42 / divideBy
+    except ZeroDivisionError:
+        print('Error: Invalid argument.')
+
+print(spam(2))
+print(spam(12))
+print(spam(0))
+print(spam(1))
+
+works!!
+
+"""
