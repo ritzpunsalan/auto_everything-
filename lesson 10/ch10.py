@@ -1,7 +1,7 @@
 """ 
-chapter 4
+chapter 10
     Lists
-pg 79 - 104
+pg 215 - 232
 """
 # 80
 
