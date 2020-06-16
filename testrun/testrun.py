@@ -9,26 +9,33 @@ E:\Desktop\neccessy books for coding\python books\automate python\testrun
 # This program says hello and asks for my name.
 
 # allMyCats1.py
-# 86
-# Working with Lists
+# 87
+# The in and not in Operators
 
-for i in range(4):
-    print(i)
+# print('howdy' in ['hello', 'hi', 'howdy', 'heyas'])
+# spam = ['hello', 'hi', 'howdy', 'heyas']
+# print('cat' in spam)
 
+# print('howdy' not in spam)
 
-# spam = ['cat', 'bat', 'rat', 'elephant']
-# del spam[2]
-# print(spam)
-# del spam[2]
-# print(spam)
-# spam[-1] = 12345
-# print(spam)
+# print('cat' not in spam)
 
-# print(spam[:])
+# myPets.py
 
-# print('The ' + spam[1] + ' is afraid of the ' + spam[3] + '.')
-# print(spam[2])
-# print(spam[3])
-# print(['cat', 'bat', 'rat', 'elephant'][3])
-# print('Hello ' + spam[0])
-# print('The ' + spam[1] + ' ate the ' + spam[0] + '.')
+myPets = ['Zophie', 'Pooka', 'Fat-tail']
+print('Enter a pet name:')
+name = input()
+if name not in myPets:
+    print('I do not have a pet named ' + name)
+else:
+    print(name + ' is my pet.')
+
+# # The Multiple Assignment Trick
+
+# cat = ['fat', 'black', 'loud']
+# size = cat[0]
+# color = cat[1]
+# disposition = cat[2]
+
+# cat = ['fat', 'black', 'loud']
+# size, color, disposition = cat

@@ -187,3 +187,46 @@ for name in catNames:
 works!!
 
 """
+# 86
+# Using for Loops with Lists
+"""
+
+for i in range(4):
+    print(i)
+
+works!!
+
+"""
+
+"""
+
+for i in [0, 1, 2, 3]:
+    print(i)
+
+work!!
+
+"""
+"""
+
+supplies = ['pens', 'staples', 'flames-throwers', 'binders']
+for i in range(len(supplies)):
+    print('Index ' + str(i) + ' in supplies is: ' + supplies[i])
+
+works!! 
+
+"""
+# 87
+# The in and not in Operators
+"""
+
+print('howdy' in ['hello', 'hi', 'howdy', 'heyas'])
+spam = ['hello', 'hi', 'howdy', 'heyas']
+print('cat' in spam)
+
+print('howdy' not in spam)
+
+print('cat' not in spam)
+
+works!!
+
+"""

@@ -3,33 +3,31 @@ chapter 5
     Lists
 pg 105 - 122
 """
-# 80
-
-# The list data type
+# 105
+# The Dictionary Data Type
 """
 
-print([1, 2, 3])
-print(['cat', 'bat', 'rat', 'elephant'])
-print(['hello', 3.1415, True, None, 42])
-spam = ['cat', 'bat', 'rat', 'elephant']
-print(spam)
+myCat = {'size': 'fat', 'color': 'grey', 'disposition': 'loud'}
+print(myCat)
 
 works!!
 
 """
-
-# Getting Individual Values in a List with Indexes
+# 106
 """
 
-spam = ['cat', 'bat', 'rat', 'elephant']
-print(spam[0])
-print(spam[1])
-print(spam[2])
-print(spam[3])
-print(['cat', 'bat', 'rat', 'elephant'][3])
-print('Hello ' + spam[0])
-print('The ' + spam[1] + ' ate the ' + spam[0] + '.')
+myCat = {'size': 'fat', 'color': 'grey', 'disposition': 'loud'}
+print(myCat['size'])
+print('My cat has ' + myCat['color'] + ' fur.')
 
-works!! 
+works!!
+
+"""
+"""
+
+spam = {12345: 'Luggage Combination', 42: 'The Answer'}
+print(spam)
+
+works!! sort of
 
 """
