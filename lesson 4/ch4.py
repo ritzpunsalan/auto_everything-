@@ -258,3 +258,50 @@ size, color, disposition = cat
 does not work!!
 
 """
+# 88
+# Augmented Assignment Operators
+"""
+
+spam = 42
+spam = spam + 1
+print(spam)
+
+spam = 42
+spam += 1
+print(spam)
+
+spam = 'Hello'
+spam += ' world!'
+print(spam)
+
+bacon = ['Zophie']
+bacon *= 3
+print(bacon)
+
+works!!
+
+"""
+# 89
+# Methods
+# Finding a Value in a List with the index() Method
+"""
+
+spam = ['hello', 'hi', 'howdy', 'heyas']
+print(spam.index('hello'))
+
+print(spam.index('heyas'))
+
+print(spam.index('howdy howdy howdy'))
+
+spam = ['Zophie', 'Pooka', 'Fat-tail', 'Pooka']
+print(spam.index('Pooka'))
+
+# AddingValuestoLists with theappend() and insert()Methods
+
+spam = ['cat', 'dog', 'bat']
+spam.append('moose')
+print(spam)
+
+works!!
+
+"""

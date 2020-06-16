@@ -9,25 +9,24 @@ E:\Desktop\neccessy books for coding\python books\automate python\testrun
 # This program says hello and asks for my name.
 
 # birthdays.py
-# 107
+# 108
 # The Dictionary Data Type
 
-# myCat = {'size': 'fat', 'color': 'grey', 'disposition': 'loud'}
-# print(myCat['size'])
-# print('My cat has ' + myCat['color'] + ' fur.')
+spam = {'color': 'red', 'age': 42}
+for v in spam.values():
+    print(v)
 
-# spam = {12345: 'Luggage Combination', 42: 'The Answer'}
-# print(spam)
+for k in spam.keys():
+    print(k)
 
-# # Dictionaries vs Lists
+for i in spam.items():
+    print(i)
 
-# spam = ['cats', 'dogs', 'moose']
-# bacon = ['dogs', 'moose', 'cats']
-# print(spam == bacon)
+spam = {'color': 'red', 'age': 42}
+print(spam.keys())
 
-# eggs = {'name': 'Zophie', 'species': 'cat', 'age': '8'}
-# ham = {'species': 'cat', 'age': '8', 'name': 'Zophie'}
-# print(eggs == ham)
+print(list(spam.keys()))
 
-spam = {'name': 'Zophie', 'age': 7}
-spam['color']
+spam = {'color': 'red', 'age': 42}
+for k, v in spam.items():
+    print('key: ' + k + ' Value: ' + str(v))

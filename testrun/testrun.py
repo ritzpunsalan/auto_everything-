@@ -9,17 +9,22 @@ E:\Desktop\neccessy books for coding\python books\automate python\testrun
 # This program says hello and asks for my name.
 
 # allMyCats1.py
-# 88
-# Augmented Assignment Operators
+# 90
+# Methods
+# Finding a Value in a List with the index() Method
 
-spam = 42
-spam = spam + 1
-print(spam)
+spam = ['hello', 'hi', 'howdy', 'heyas']
+print(spam.index('hello'))
 
-spam = 42
-spam += 1
-print(spam)
+print(spam.index('heyas'))
 
-spam = 'Hello'
-spam += ' world!'
+# print(spam.index('howdy howdy howdy'))
+
+spam = ['Zophie', 'Pooka', 'Fat-tail', 'Pooka']
+print(spam.index('Pooka'))
+
+# AddingValuestoLists with theappend() and insert()Methods
+
+spam = ['cat', 'dog', 'bat']
+spam.append('moose')
 print(spam)
