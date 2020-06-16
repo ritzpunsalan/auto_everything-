@@ -230,3 +230,31 @@ print('cat' not in spam)
 works!!
 
 """
+# myPets.py
+"""
+
+myPets = ['Zophie', 'Pooka', 'Fat-tail']
+print('Enter a pet name:')
+name = input()
+if name not in myPets:
+    print('I do not have a pet named ' + name)
+else:
+    print(name + ' is my pet.')
+
+works!! 
+
+"""
+# The Multiple Assignment Trick
+"""
+
+cat = ['fat', 'black', 'loud']
+size = cat[0]
+color = cat[1]
+disposition = cat[2]
+
+cat = ['fat', 'black', 'loud']
+size, color, disposition = cat
+
+does not work!!
+
+"""

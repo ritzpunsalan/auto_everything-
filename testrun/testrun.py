@@ -9,33 +9,17 @@ E:\Desktop\neccessy books for coding\python books\automate python\testrun
 # This program says hello and asks for my name.
 
 # allMyCats1.py
-# 87
-# The in and not in Operators
+# 88
+# Augmented Assignment Operators
 
-# print('howdy' in ['hello', 'hi', 'howdy', 'heyas'])
-# spam = ['hello', 'hi', 'howdy', 'heyas']
-# print('cat' in spam)
+spam = 42
+spam = spam + 1
+print(spam)
 
-# print('howdy' not in spam)
+spam = 42
+spam += 1
+print(spam)
 
-# print('cat' not in spam)
-
-# myPets.py
-
-myPets = ['Zophie', 'Pooka', 'Fat-tail']
-print('Enter a pet name:')
-name = input()
-if name not in myPets:
-    print('I do not have a pet named ' + name)
-else:
-    print(name + ' is my pet.')
-
-# # The Multiple Assignment Trick
-
-# cat = ['fat', 'black', 'loud']
-# size = cat[0]
-# color = cat[1]
-# disposition = cat[2]
-
-# cat = ['fat', 'black', 'loud']
-# size, color, disposition = cat
+spam = 'Hello'
+spam += ' world!'
+print(spam)
