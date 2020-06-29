@@ -305,3 +305,107 @@ print(spam)
 works!!
 
 """
+# 90
+"""
+
+spam = ['cat', 'dog', 'bat']
+spam.insert(1, 'chicken')
+print(spam)
+
+works!!
+
+"""
+"""
+
+eggs = 'hello'
+eggs.append('world')
+print(eggs)
+
+bacon = 42
+bacon.insert(1, 'world')
+print(bacon)
+
+does not work properly!!
+
+"""
+# Removing Values from Lists with remove()
+"""
+
+spam = ['cat', 'bat', 'rat', 'elephant']
+spam.remove('bat')
+print(spam)
+
+works!!
+
+"""
+# 91
+"""
+
+spam = ['cat', 'bat', 'rat', 'elephant']
+spam.remove('chicken')
+print(spam)
+
+does not work properly!!
+
+"""
+"""
+
+spam = ['cat', 'bat', 'rat', 'cat', 'hat', 'cat']
+spam.remove('cat')
+print(spam)
+
+works!!
+
+"""
+# Sorting the Values in a List with the sort() Method
+"""
+
+spam = [2, 5, 3.14, 1, -7]
+spam.sort()
+print(spam)
+spam = ['ants', 'cats', 'dogs', 'badgers', 'elephants']
+spam.sort()
+print(spam)
+
+spam.sort(reverse=True)
+print(spam)
+
+works!!
+
+"""
+
+# 92
+"""
+
+ spam = [1, 3, 2, 4, 'Alice', 'Bob']
+ spam.sort()
+
+works improperly!!
+
+import random
+spam = ['Alice', 'ants', 'Bob', 'badgers', 'Carol', 'cats']
+spam.sort()
+print(spam)
+
+spam = ['a', 'z', 'A', 'Z']
+spam.sort(key=str.lower)
+print(spam)
+
+# Example Program: Magic 8 Ball with aList
+# magic8ball2.py
+
+messages = ['It is certain',
+            'It is decidedly so',
+            'Yes definitely',
+            'Reply hazy try again',
+            'Ask again later',
+            'Concentrate and ask again',
+            'My reply is no',
+            'Outlook not so good',
+            'Very doubtful']
+
+print(messages[random.randint(0, len(messages) - 1)])
+
+all works!!
+
+"""

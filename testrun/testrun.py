@@ -9,22 +9,34 @@ E:\Desktop\neccessy books for coding\python books\automate python\testrun
 # This program says hello and asks for my name.
 
 # allMyCats1.py
-# 90
-# Methods
-# Finding a Value in a List with the index() Method
+# 92
 
-spam = ['hello', 'hi', 'howdy', 'heyas']
-print(spam.index('hello'))
 
-print(spam.index('heyas'))
+# spam = [1, 3, 2, 4, 'Alice', 'Bob']
+# spam.sort()
 
-# print(spam.index('howdy howdy howdy'))
-
-spam = ['Zophie', 'Pooka', 'Fat-tail', 'Pooka']
-print(spam.index('Pooka'))
-
-# AddingValuestoLists with theappend() and insert()Methods
-
-spam = ['cat', 'dog', 'bat']
-spam.append('moose')
+spam = ['Alice', 'ants', 'Bob', 'badgers', 'Carol', 'cats']
+spam.sort()
 print(spam)
+
+spam = ['a', 'z', 'A', 'Z']
+spam.sort(key=str.lower)
+print(spam)
+
+# Example Program: Magic 8 Ball with aList
+# magic8ball2.py
+
+import random
+
+messages = ['It is certain',
+    'It is decidedly so',
+    'Yes definitely',
+    'Reply hazy try again',
+    'Ask again later',
+    'Concentrate and ask again',
+    'My reply is no',
+    'Outlook not so good',
+    'Very doubtful']
+
+print(messages[random.randint(0, len(messages) - 1)])
+
