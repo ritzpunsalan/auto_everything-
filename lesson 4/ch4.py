@@ -409,3 +409,126 @@ print(messages[random.randint(0, len(messages) - 1)])
 all works!!
 
 """
+
+# 93
+"""
+
+spam = ['apples',
+        'oranges',
+        'bananas',
+        'cats']
+print(spam)
+
+print('four score and seven ' +
+      'years ago...')
+
+works!!
+
+"""
+# 94
+"""
+
+name = 'Zophie'
+# name[0]
+# name[-2]
+# name[0:4]
+# print(name)
+print('Zo' in name)
+print('z' in name)
+print('p' not in name)
+'Zo' in name
+'z' in name
+'p' not in name
+for i in name:
+    print('*** ' + i + ' ***')
+
+works sort of!!
+
+# Mutable and ImmutableDataTypes
+
+# name = 'Zophie a cat'
+# name[7] = 'the'
+
+works improperly!!
+
+name = 'Zophie a cat'
+newName = name[0:7] + 'the' + name[8:12]
+print(name)
+print(newName)
+
+works!!
+
+"""
+# 95
+"""
+
+eggs = [1, 2, 3]
+eggs = [4, 5, 6]
+print(eggs)
+
+eggs = [1, 2, 3]
+del eggs[2]
+del eggs[1]
+del eggs[0]
+eggs.append(4)
+eggs.append(5)
+eggs.append(6)
+print(eggs)
+
+works!!
+
+"""
+# 96
+"""
+
+# The Tuple Data type
+
+eggs = ('hello', 42, 0.5)
+print(eggs[0])
+print(eggs[1:3])
+print(len(eggs))
+
+works!!
+
+eggs = ('hello', 42, 0.5)
+# print(eggs[1] = 99)
+
+works!! error
+
+"""
+
+# 97
+"""
+
+print(type(('hello',)))
+print(type(('hello')))
+
+# Converting Types with the list() and tuple() function
+
+print(tuple(['cat', 'dog', 5]))
+print(list(('cat', 'dog', 5)))
+print(list('hello'))
+
+# references
+
+spam = 42
+cheese = spam
+spam = 100
+print(spam)
+print(cheese)
+
+works!!
+
+"""
+# 98
+"""
+
+spam = [0, 1, 2, 3, 4, 5]
+cheese = spam
+cheese[1] = 'Hello!'
+print(spam)
+print(cheese)
+
+works!!
+
+"""

@@ -9,34 +9,20 @@ E:\Desktop\neccessy books for coding\python books\automate python\testrun
 # This program says hello and asks for my name.
 
 # allMyCats1.py
-# 92
+# 100
 
+# Passing References
 
-# spam = [1, 3, 2, 4, 'Alice', 'Bob']
-# spam.sort()
+def eggs(someParameter):
+    someParameter.append('Hello')
 
-spam = ['Alice', 'ants', 'Bob', 'badgers', 'Carol', 'cats']
-spam.sort()
+spam = [1, 2, 3]
+eggs(spam)
 print(spam)
 
-spam = ['a', 'z', 'A', 'Z']
-spam.sort(key=str.lower)
+import copy
+spam = ['A', 'B', 'C', 'D']
+cheese = copy.copy(spam)
+cheese[1] = 42
 print(spam)
-
-# Example Program: Magic 8 Ball with aList
-# magic8ball2.py
-
-import random
-
-messages = ['It is certain',
-    'It is decidedly so',
-    'Yes definitely',
-    'Reply hazy try again',
-    'Ask again later',
-    'Concentrate and ask again',
-    'My reply is no',
-    'Outlook not so good',
-    'Very doubtful']
-
-print(messages[random.randint(0, len(messages) - 1)])
-
+print(cheese)
