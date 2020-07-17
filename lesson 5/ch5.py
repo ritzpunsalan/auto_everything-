@@ -104,3 +104,114 @@ for k, v in spam.items():
 works!!
 
 """
+
+# 109
+# Checking Whether a Key or Value Exists in a Dictionary
+"""
+
+spam = {'name': 'Zophie', 'age': 7}
+print('name' in spam.key())
+
+print('Zophie' in spam.values())
+
+print('color' in spam.keys())
+
+print('color' not in spam.keys())
+
+print('color' in spam)
+
+# The get() Method
+
+picnicItems = {'apples': 5, 'cups': 2}
+print('I am bringing ' + str(picnicItems.get('cups', 0)) + ' cups.')
+
+print('I am bringing ' + str(picnicItems.get('cups', 0)) + ' eggs.')
+
+# picnicItems = {'apples': 5, 'cups': 2}
+# print('I am bringing ' + str(picnicItems.['eggs']) + ' cups.')
+
+does not work properly!!
+
+"""
+# 110
+# The setdefault() Method
+"""
+
+# spam = {'name:' 'Pooka', 'age': 5}
+# if 'color' not in spam:
+#     spam['color'] = 'black'
+
+# spam = {'name:' 'Pooka', 'age': 5}
+# print(spam.setdefault('color', 'black'))
+
+# # spam
+# print(spam)
+# # spam.setdefault('color', 'white')
+# print(spam.setdefault('color', 'white'))
+
+# # spam
+# print(spam)
+
+# characterCount.py
+
+message = 'It was a bright cold day in april, and the clocks were striking thirteen.'
+count = {}
+
+for character in message:
+    count.setdefault(character, 0)
+    count[character] = count[character] + 1
+
+print(count)
+
+
+sort of works!!
+
+"""
+# 111
+# Pretty Printing
+
+# PrettyCharacterCount.py
+"""
+
+import pprint
+message = 'It was a bright cold day in April, and the clocks were striking thirteen.'
+count = {}
+
+for character in message:
+    count.setdefault(character, 0)
+    count[character] = count[character] + 1
+
+pprint.pprint(count)
+
+works!!
+
+"""
+#115
+# ticTacToe.py
+"""
+
+TheBoard = {'top-L': ' ', 'top-M': ' ', 'top-R': ' ',
+            'mid-L': ' ', 'mid-M': ' ', 'mid-R': ' ',
+            'low-L': ' ', 'low-M': ' ', 'low-R': ' '}
+def printBoard(board):
+    print(board['top-L'] + '|' + board['top-M'] + '|' + board['top-R'])
+    print('-+-+-')
+    print(board['mid-L'] + '|' + board['mid-M'] + '|' + board['mid-R'])
+    print('-+-+-')
+    print(board['low-L'] + '|' + board['low-M'] + '|' + board['low-R'])
+printBoard(TheBoard)
+
+TheBoard = {'top-L': 'O', 'top-M': 'O', 'top-R': 'O',
+            'mid-L': 'X', 'mid-M': 'X', 'mid-R': ' ',
+            'low-L': ' ', 'low-M': ' ', 'low-R': 'X'}
+def printBoard(board):
+    print(board['top-L'] + '|' + board['top-M'] + '|' + board['top-R'])
+    print('-+-+-')
+    print(board['mid-L'] + '|' + board['mid-M'] + '|' + board['mid-R'])
+    print('-+-+-')
+    print(board['low-L'] + '|' + board['low-M'] + '|' + board['low-R'])
+printBoard(TheBoard)
+
+works!!
+
+"""

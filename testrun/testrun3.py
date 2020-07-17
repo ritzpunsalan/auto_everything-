@@ -9,24 +9,27 @@ E:\Desktop\neccessy books for coding\python books\automate python\testrun
 # This program says hello and asks for my name.
 
 # birthdays.py
-# 108
-# The Dictionary Data Type
+# 115
+# ticTacToe.py
 
-spam = {'color': 'red', 'age': 42}
-for v in spam.values():
-    print(v)
+TheBoard = {'top-L': ' ', 'top-M': ' ', 'top-R': ' ',
+            'mid-L': ' ', 'mid-M': ' ', 'mid-R': ' ',
+            'low-L': ' ', 'low-M': ' ', 'low-R': ' '}
+def printBoard(board):
+    print(board['top-L'] + '|' + board['top-M'] + '|' + board['top-R'])
+    print('-+-+-')
+    print(board['mid-L'] + '|' + board['mid-M'] + '|' + board['mid-R'])
+    print('-+-+-')
+    print(board['low-L'] + '|' + board['low-M'] + '|' + board['low-R'])
+printBoard(TheBoard)
 
-for k in spam.keys():
-    print(k)
-
-for i in spam.items():
-    print(i)
-
-spam = {'color': 'red', 'age': 42}
-print(spam.keys())
-
-print(list(spam.keys()))
-
-spam = {'color': 'red', 'age': 42}
-for k, v in spam.items():
-    print('key: ' + k + ' Value: ' + str(v))
+TheBoard = {'top-L': 'O', 'top-M': 'O', 'top-R': 'O',
+            'mid-L': 'X', 'mid-M': 'X', 'mid-R': ' ',
+            'low-L': ' ', 'low-M': ' ', 'low-R': 'X'}
+def printBoard(board):
+    print(board['top-L'] + '|' + board['top-M'] + '|' + board['top-R'])
+    print('-+-+-')
+    print(board['mid-L'] + '|' + board['mid-M'] + '|' + board['mid-R'])
+    print('-+-+-')
+    print(board['low-L'] + '|' + board['low-M'] + '|' + board['low-R'])
+printBoard(TheBoard)
