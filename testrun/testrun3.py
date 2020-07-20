@@ -9,27 +9,22 @@ E:\Desktop\neccessy books for coding\python books\automate python\testrun
 # This program says hello and asks for my name.
 
 # birthdays.py
-# 115
+# 118
 # ticTacToe.py
 
-TheBoard = {'top-L': ' ', 'top-M': ' ', 'top-R': ' ',
-            'mid-L': ' ', 'mid-M': ' ', 'mid-R': ' ',
-            'low-L': ' ', 'low-M': ' ', 'low-R': ' '}
-def printBoard(board):
-    print(board['top-L'] + '|' + board['top-M'] + '|' + board['top-R'])
-    print('-+-+-')
-    print(board['mid-L'] + '|' + board['mid-M'] + '|' + board['mid-R'])
-    print('-+-+-')
-    print(board['low-L'] + '|' + board['low-M'] + '|' + board['low-R'])
-printBoard(TheBoard)
+allGuests = {'Alice': {'apples': 5, 'pretzels': 12},
+            'Bob': {'ham sandwiches': 3, 'apples': 2},
+            'Carol': {'cups': 3, 'apple pies': 1}}
 
-TheBoard = {'top-L': 'O', 'top-M': 'O', 'top-R': 'O',
-            'mid-L': 'X', 'mid-M': 'X', 'mid-R': ' ',
-            'low-L': ' ', 'low-M': ' ', 'low-R': 'X'}
-def printBoard(board):
-    print(board['top-L'] + '|' + board['top-M'] + '|' + board['top-R'])
-    print('-+-+-')
-    print(board['mid-L'] + '|' + board['mid-M'] + '|' + board['mid-R'])
-    print('-+-+-')
-    print(board['low-L'] + '|' + board['low-M'] + '|' + board['low-R'])
-printBoard(TheBoard)
+def totalBrought(guest, item):
+    numBrought = 0
+    for k, v in guest.items():
+        numBrought = numBrought + v.get(item, 0)
+    return numBrought
+
+print('Number of things being brought:')
+print(' - Apples         ' + str(totalBrought(allGuests, 'apples')))
+print(' - Cups           ' + str(totalBrought(allGuests, 'cups')))
+print(' - Cakes          ' + str(totalBrought(allGuests, 'cakes')))
+print(' - Ham Sandwiches ' + str(totalBrought(allGuests, 'ham sandwiches')))
+print(' - Apple Pies     ' + str(totalBrought(allGuests, 'apple pies')))

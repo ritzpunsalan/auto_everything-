@@ -5,24 +5,33 @@ E:\Desktop\neccessy books for coding\python books
 E:\Desktop\neccessy books for coding\python books\automate python\testrun
 
 """
-# chapter: 4
-# This program says hello and asks for my name.
+# chapter: 6
+# 130
+# cmd python
+# ctrl + z to exit
 
-# allMyCats1.py
-# 100
+spam = 'Hello world!'
+spam.islower()
 
-# Passing References
+spam.isupper()
 
-def eggs(someParameter):
-    someParameter.append('Hello')
+'HELLO'.isupper()
 
-spam = [1, 2, 3]
-eggs(spam)
-print(spam)
+'abc12345'.islower()
 
-import copy
-spam = ['A', 'B', 'C', 'D']
-cheese = copy.copy(spam)
-cheese[1] = 42
-print(spam)
-print(cheese)
+'12345'.islower()
+
+'12345'.isupper()
+
+
+'Hello'.upper()
+
+'Hello'.upper().lower()
+
+'Hello'.upper().lower().upper()
+
+'HELLO'.lower()
+
+'HELLO'.lower().islower()
+
+# The isX String Methods
