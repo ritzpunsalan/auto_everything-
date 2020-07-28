@@ -6,32 +6,29 @@ E:\Desktop\neccessy books for coding\python books\automate python\testrun
 
 """
 # chapter: 6
-# 130
+# 137 - 138
 # cmd python
 # ctrl + z to exit
 
-spam = 'Hello world!'
-spam.islower()
+# Step 3: Copy the Right Password
 
-spam.isupper()
+#! python3
+# pw.py - An insecure password locker program.
 
-'HELLO'.isupper()
+PASSWORDS = {'email': 'F7minlBDDuvMJuxESSKHFhTxFtjVB6',
+             'blog': 'VmALvQyKAxiVH5G8v01if1MLZF3sdt',
+             'luggage': '12345'}
 
-'abc12345'.islower()
+# import sys, pyperclip
+import sys
+if len(sys.argv) < 2:
+    print('Usage: py pw.py [account] - copy account password')
+    sys.exit()
 
-'12345'.islower()
+account = sys.argv[1]  # first command line arg is the account name
 
-'12345'.isupper()
-
-
-'Hello'.upper()
-
-'Hello'.upper().lower()
-
-'Hello'.upper().lower().upper()
-
-'HELLO'.lower()
-
-'HELLO'.lower().islower()
-
-# The isX String Methods
+if account in PASSWORDS:
+    pyperclip.copy(PASSWORDS[account])
+    print('Password for ' + account + ' copied to clipboard.')
+else:
+    print('There is no account named ' + account)
