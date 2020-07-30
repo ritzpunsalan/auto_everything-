@@ -5,30 +5,36 @@ E:\Desktop\neccessy books for coding\python books
 E:\Desktop\neccessy books for coding\python books\automate python\testrun
 
 """
-# chapter: 6
-# 137 - 138
+# chapter: 7
+# 159 - 160
 # cmd python
 # ctrl + z to exit
 
-# Step 3: Copy the Right Password
+# The Caret and Dollar Sign Characters
 
-#! python3
-# pw.py - An insecure password locker program.
+beginsWithHello = re.compile(r'^Hello')
 
-PASSWORDS = {'email': 'F7minlBDDuvMJuxESSKHFhTxFtjVB6',
-             'blog': 'VmALvQyKAxiVH5G8v01if1MLZF3sdt',
-             'luggage': '12345'}
+beginsWithHello.search('Hello world!')
 
-# import sys, pyperclip
-import sys
-if len(sys.argv) < 2:
-    print('Usage: py pw.py [account] - copy account password')
-    sys.exit()
+beginsWithHello.search('He said hello.') == None
 
-account = sys.argv[1]  # first command line arg is the account name
+endsWithNumber = re.compile(r'\d$')
 
-if account in PASSWORDS:
-    pyperclip.copy(PASSWORDS[account])
-    print('Password for ' + account + ' copied to clipboard.')
-else:
-    print('There is no account named ' + account)
+endsWithNumber.search('Your number is 42')
+
+endsWithNumber.search('Your number is forty two.') == None
+
+wholeStringIsNum = re.compile(r'^\d+$')
+
+wholeStringIsNum.search('1234567890')
+
+wholeStringIsNum.search('12345xyz67890') == None
+
+wholeStringIsNum.search('12 34567890') == None
+
+
+# The Wildcard Character
+
+atRegex = re.compile(r'.at')
+
+atRegex.findall('The cat in the hat sat on the flat mat.')

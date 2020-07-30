@@ -5,12 +5,10 @@ E:\Desktop\neccessy books for coding\python books
 E:\Desktop\neccessy books for coding\python books\automate python\testrun
 
 """
-# chapter: 5
-# This program says hello and asks for my name.
-
-# birthdays.py
-# 118
-# ticTacToe.py
+# chapter: 7
+# 137 - 138
+# cmd python
+# ctrl + z to exit
 
 allGuests = {'Alice': {'apples': 5, 'pretzels': 12},
             'Bob': {'ham sandwiches': 3, 'apples': 2},

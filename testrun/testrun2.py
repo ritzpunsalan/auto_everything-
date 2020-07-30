@@ -1,7 +1,11 @@
-# # if name == 'Alice':
-#     print('Hi, Alice.')
+"""
+    source link:
+E:\Desktop\neccessy books for coding\python books\automate python
+E:\Desktop\neccessy books for coding\python books
+E:\Desktop\neccessy books for coding\python books\automate python\testrun
 
-if num >= 0:
-    print("Positive or Zero")
-else:
-    print("Negative number")
+"""
+# chapter: 7
+# 137 - 138
+# cmd python
+# ctrl + z to exit
