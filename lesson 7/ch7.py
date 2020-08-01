@@ -342,3 +342,108 @@ atRegex.findall('The cat in the hat sat on the flat mat.')
 works!!
 
 """
+# 161
+# cmd python
+# ctrl + z to exit
+"""
+
+# Matching Everything with Dot-Star
+# import re
+
+nameRegex = re.compile(r'First Name: (.*) Last Name: (.*)')
+mo = nameRegex.search('First Name: Al Last Name: Sweigart')
+mo.group(1)
+
+mo.group(2)
+
+
+nongreedyRegex = re.compile(r'<.*?>')
+mo = nongreedyRegex.search('<To serve man> for dinner.>')
+mo.group()
+
+
+greedyRegex = re.compile(r'<.*>')
+mo = greedyRegex.search('<To serve man> for dinner.>')
+mo.group()
+
+works!!
+
+"""
+# 162
+# cmd python
+# ctrl + z to exit
+"""
+
+# Matching Newlines with the Dot Character
+
+noNewlineRegex = re.compile('.*')
+noNewlineRegex.search('Serve the public trust.\nProtect the innocent. \nUphold the law.').group()
+
+newlineRegex = re.compile('.*', re.DOTALL)
+newlineRegex.search('Serve the public trust.\nProtect the innocent. \nUphold the law.').group()
+
+works!!
+
+"""
+# 163
+# cmd python
+# ctrl + z to exit
+"""
+
+# Case-Insensitive Matching
+
+regex1 = re.compile('RoboCop')
+regex2 = re.compile('ROBOCOP')
+regex3 = re.compile('robOcop')
+regex4 = re.compile('RobocOp')
+
+robocop = re.compile(r'robocop', re.I)
+robocop.search('RoboCop is part man, part machine, all cop.').group()
+
+
+robocop.search('ROBOCOP protects the innocent.').group()
+
+
+robocop.search('Al, why does your programming book talk about robocop so much?').group()
+
+
+# Substituting Strings with the sub() Method
+
+namesRegex = re.compile(r'Agent \w+')
+namesRegex.sub('CENSORED', 'Agent Alice gave the secret documents to Agent Bob.')
+
+works!!
+
+"""
+# 164
+# cmd python
+# ctrl + z to exit
+"""
+
+import re
+
+agentNamesRegex = re.compile(r'Agent (\w)\w*')
+agentNamesRegex.sub(r'\1****', 'Agent Alice told Agent Carol that Agent Eve knew Agent Bob was a double agent.')
+
+
+# Managing Complex Regexes
+
+# Combining re.IGNORECASE, re.DOTALL, and re.VERBOSE
+
+works!!
+
+"""
+# 165
+# cmd python
+# ctrl + z to exit
+"""
+
+import re
+
+someRegexValue = re.compile('foo', re.IGNORECASE | re.DOTALL)
+
+someRegexValue = re.compile('foo', re.IGNORECASE | re.DOTALL | re.VERBOSE)
+
+works sort of!!
+
+"""
