@@ -3,33 +3,59 @@ chapter 9
     Lists
 pg 197 - 214
 """
-# 80
-
-# The list data type
+# 198
+# cmd python
+# ctrl + z to exit
 """
 
-print([1, 2, 3])
-print(['cat', 'bat', 'rat', 'elephant'])
-print(['hello', 3.1415, True, None, 42])
-spam = ['cat', 'bat', 'rat', 'elephant']
-print(spam)
+# The shutil Module
 
-works!!
+# Copying Files and Folders
+
+import shutil
+import os
+
+os.chdir('C:\\')
+shutil.copy('C:\\spam.txt', 'C:\\delicious')
+
+shutil.copy('eggs.txt', 'C:\\delicious\\eggs2.txt')
+
+does not work!! 
 
 """
-
-# Getting Individual Values in a List with Indexes
+# 199
+# cmd python
+# ctrl + z to exit
 """
 
-spam = ['cat', 'bat', 'rat', 'elephant']
-print(spam[0])
-print(spam[1])
-print(spam[2])
-print(spam[3])
-print(['cat', 'bat', 'rat', 'elephant'][3])
-print('Hello ' + spam[0])
-print('The ' + spam[1] + ' ate the ' + spam[0] + '.')
+import shutil
+import os
+os.chdir('C:\\')
+shutil.copytree('C:\\bacon', 'C:\\bacon_backup')
 
-works!! 
+# Moving and Renaming Files and Folders
+
+import shutil
+shutil.move('C:\\bacon.txt', 'C:\\eggs')
+
+
+shutil.move('C:\\bacon.txt', 'C:\\eggs\\new_bacon.txt')
+
+
+shutil.move('C:\\bacon.txt', 'C:\\eggs')
+
+does not work!!
+
+"""
+# 200
+# cmd python
+# ctrl + z to exit
+"""
+
+shutil.move('spam.txt', 'c:\\does_not_exist\\eggs\\ham')
+
+# Permanently Deleting Files and Folders
+
+works sort of !!
 
 """
