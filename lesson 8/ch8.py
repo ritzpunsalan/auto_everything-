@@ -261,3 +261,53 @@ shelfFile.close()
 works sort of!!
 
 """
+# 185
+# cmd python
+# ctrl + z to exit
+"""
+
+import shelve
+shelfFile = shelve.open('mydata')
+list(shelfFile.keys())
+
+list(shelfFile.values())
+
+shelfFile.close()
+
+# Saving Variables with the pprint.pformat() Function
+
+import pprint
+cats = [{'name': 'Zophie', 'desc': 'chubby'}, {'name': 'Pooka', 'desc': 'fluffy'}]
+pprint.pformat(cats)
+
+fileObj = open('myCats.py', 'w')
+fileObj.write('cats = ' + pprint.pformat(cats) + '\n')
+
+fileObj.close()
+
+# important note
+# very dangerous to mess with if not knowing properly.
+# ^^^^ ^^^^^^^^^
+
+works!!
+
+"""
+# 185
+# cmd python
+# ctrl + z to exit
+"""
+
+import myCats
+myCats.cats
+
+myCats.cats[0]
+
+myCats.cats[0]['name']
+
+# important note
+# very dangerous to mess with if not knowing properly.
+# ^^^^ ^^^^^^^^^
+
+works sort of!!
+
+"""
